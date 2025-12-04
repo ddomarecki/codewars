@@ -1,0 +1,29 @@
+<script>
+  function points(games) {
+    for (let i = 0; i < games.length; i++) {
+      let game = games[i].split(":");
+      let x = parseInt(game[0]);
+      let y = parseInt(game[1]);
+      if (x > y) {
+        games[i] = 3;
+      } else if (x < y) {
+        games[i] = 0;
+      } else {
+        games[i] = 1;
+      }
+    }
+    return games.reduce((a, b) => a + b, 0);
+  }
+
+  //   function points(games) {
+  //   var sum=0;
+  //   for (var i=0; i<games.length; ++i)
+  //   {
+  //     if (games[i][0]>games[i][2])
+  //       sum+=3;
+  //     if (games[i][0]==games[i][2])
+  //       sum+=1;
+  //   }
+  //   return sum;
+  // }
+</script>
