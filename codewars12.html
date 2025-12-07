@@ -1,0 +1,19 @@
+<script>
+  function smash(words) {
+    let sentence = "";
+
+    for (let i = 0; i < words.length; i++) {
+      if (i === words.length - 1) {
+        sentence += words[i]; // ostatnie słowo – bez spacji
+      } else {
+        sentence += words[i] + " "; // pozostałe słowa
+      }
+    }
+
+    return sentence;
+  }
+
+  smash = function (words) {
+    return words.join(" ");
+  };
+</script>
