@@ -16,9 +16,17 @@
 
   //   function century(year) {
   //     return Math.ceil(year / 100);
+  //   //   }
+
+  //   function DNAtoRNA(dna) {
+  //     return dna.replace(/T/g, "U");
   //   }
 
-  function DNAtoRNA(dna) {
-    return dna.replace(/T/g, "U");
+  function paperwork(n, m) {
+    if (n < 0 || m < 0) {
+      return 0;
+    } else {
+      return n * m;
+    }
   }
 </script>
