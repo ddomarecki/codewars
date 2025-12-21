@@ -22,11 +22,21 @@
   //     return dna.replace(/T/g, "U");
   //   }
 
-  function paperwork(n, m) {
-    if (n < 0 || m < 0) {
-      return 0;
-    } else {
-      return n * m;
-    }
-  }
+  // function paperwork(n, m) {
+  //   if (n < 0 || m < 0) {
+  //     return 0;
+  //   } else {
+  //     return n * m;
+  //   }
+  // }
+
+  function getGrade(s1, s2, s3) {
+  let averageScore = (s1 + s2 + s3) / 3;
+  return averageScore >= 90 ? "A"
+       : averageScore >= 80 ? "B"
+       : averageScore >= 70 ? "C"
+       : averageScore >= 60 ? "D"
+       : "F";
+}
+
 </script>
