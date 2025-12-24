@@ -1,5 +1,5 @@
 <script>
-  //   function correctTail(body, tail) {
+  function correctTail(body, tail) {
   //     let sub = body.substr(body.length - tail.length);
 
   //     if (sub === tail) {
@@ -30,13 +30,16 @@
   //   }
   // }
 
-  function getGrade(s1, s2, s3) {
-  let averageScore = (s1 + s2 + s3) / 3;
-  return averageScore >= 90 ? "A"
-       : averageScore >= 80 ? "B"
-       : averageScore >= 70 ? "C"
-       : averageScore >= 60 ? "D"
-       : "F";
-}
+//   function getGrade(s1, s2, s3) {
+//   let averageScore = (s1 + s2 + s3) / 3;
+//   return averageScore >= 90 ? "A"
+//        : averageScore >= 80 ? "B"
+//        : averageScore >= 70 ? "C"
+//        : averageScore >= 60 ? "D"
+//        : "F";
+// }
 
+function enough(cap, on, wait) {
+  return Math.max(0, wait - (cap - on));
+}
 </script>
