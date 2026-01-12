@@ -47,4 +47,41 @@ function cubeChecker(volume, side) {
   if (volume <= 0 || side <= 0) return false;
   return side ** 3 === volume;
 }
+
+
+function simpleMultiplication(number) {
+  return number % 2 === 0 ? number * 8 : number * 9;
+}
 </script>
+
+const reverseSeq = n => {
+  let array = [];
+  for(let i = n; i > 0; i--) {
+    array.push(i)
+  }
+  return array;
+};
+
+const greet = () => "hello world!"
+
+function boolToWord( bool ){
+  return bool ? "Yes" : "No"
+}
+
+function sum (numbers) {
+ return numbers != 0 || null ? numbers.reduce((partialSum, a) => partialSum + a, 0) : 0; 
+}
+
+function DNAStrand(dna) {
+  return dna
+    .split("")
+    .map(nucleotide => {
+      switch (nucleotide) {
+        case "A": return "T";
+        case "T": return "A";
+        case "C": return "G";
+        case "G": return "C";
+      }
+    })
+    .join("");
+}
